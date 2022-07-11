@@ -1,0 +1,192 @@
+body {
+   background-image: url("../assets/home/background-home-desktop.jpg");
+}
+
+main .grid-cell {
+   align-self: flex-end;
+   justify-self: center;
+   margin: 125px 0;
+}
+
+main #explore-btn {
+   align-self: flex-end;
+   justify-self: center;
+   aspect-ratio: 1;
+   width: 275px;
+   border-radius: 100%;
+   position: relative;
+   cursor: pointer;
+   margin: 125px 0;
+   transition: 0.25s ease-out;
+   background-color: #fff;
+}
+
+main #explore-btn:after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: rgba(151, 151, 151, 0.35);
+   aspect-ratio: 1;
+   width: 100%;
+   border-radius: 100%;
+   z-index: -1;
+   transition: 0.25s ease-out;
+}
+
+main #explore-btn:hover:after {
+   width: calc(100% + 30%);
+}
+
+main #explore-btn a {
+   display: block;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   pointer-events: none;
+}
+
+main #explore-btn.animate {
+   animation: 0.75s rotate linear forwards;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotateY(0deg) translateY(0px);
+      opacity: 1;
+   }
+   100% {
+      transform: rotateY(720deg) translateY(-50px);
+      opacity: 0;
+   }
+}
+
+@media only screen and (max-width: 1400px) {
+   main .grid-cell {
+      margin: 0 0 60px 0;
+   }
+   main #explore-btn {
+      margin: 0 0 60px 0;
+      width: 225px;
+   }
+}
+
+@media only screen and (max-width: 1200px) {
+   main .grid-cell {
+      justify-self: flex-end;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   body {
+      background-image: url("../assets/home/background-home-tablet.jpg");
+   }
+   main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+   main .grid-cell {
+      justify-self: center;
+      margin: 0;
+   }
+   main .grid-cell > * {
+      text-align: center;
+   }
+   main #explore-btn {
+      margin: 0;
+      align-self: center;
+   }
+}
+
+@media only screen and (max-width: 850px) {
+   main .grid-cell {
+      width: 400px;
+   }
+   h5.heading-5 {
+      font-size: 22px;
+   }
+   h1.heading-1 {
+      font-size: 125px;
+   }
+   p.body-text {
+      line-height: 25px;
+      font-size: 16px;
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   body {
+      background-image: url("../assets/home/background-home-mobile.jpg");
+   }
+   main .grid-cell {
+      width: 380px;
+      align-self: center;
+   }
+   h5.heading-5 {
+      font-size: 22px;
+      margin-bottom: 20px;
+   }
+   h1.heading-1 {
+      font-size: 125px;
+      margin-bottom: 20px;
+   }
+   p.body-text {
+      line-height: 25px;
+      font-size: 16px;
+   }
+   main #explore-btn {
+      width: 200px;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   main .grid-cell {
+      width: 350px;
+   }
+   h5.heading-5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      letter-spacing: 3px;
+   }
+   h1.heading-1 {
+      font-size: 100px;
+      margin-bottom: 10px;
+   }
+   p.body-text {
+      line-height: 25px;
+      font-size: 16px;
+   }
+   main #explore-btn {
+      width: 180px;
+   }
+   main #explore-btn h4.heading-4 {
+      font-size: 25px;
+   }
+}
+
+@media only screen and (max-width: 380px) {
+   main .grid-cell {
+      width: 290px;
+   }
+   h5.heading-5 {
+      font-size: 16px;
+      margin-bottom: 10px;
+   }
+   h1.heading-1 {
+      font-size: 80px;
+      margin-bottom: 10px;
+   }
+   p.body-text {
+      line-height: 25px;
+      font-size: 16px;
+   }
+   main #explore-btn {
+      width: 150px;
+   }
+   main #explore-btn h4.heading-4 {
+      font-size: 22px;
+   }
+}

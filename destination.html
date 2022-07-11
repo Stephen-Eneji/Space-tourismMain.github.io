@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon-space-shuttle.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="./css/shared/styles.css">
+   <link rel="stylesheet" type="text/css" href="./css/destination.css">
+   <title>Space Tourism</title>
+</head>
+
+<body>
+   <header>
+      <a href="./index.html">
+         <img src="./assets/shared/logo.svg" id="logo">
+      </a>
+      <div id="hr"></div>
+      <nav id="navbar-main">
+         <ul>
+            <li>
+               <a href="./index.html" class="nav-text">
+                  <span>00</span> HOME
+               </a>
+            </li>
+            <li>
+               <a href="./destination.html" class="nav-text active">
+                  <span>01</span> DESTINATION
+               </a>
+            </li>
+            <li>
+               <a href="./crew.html" class="nav-text">
+                  <span>02</span> CREW
+               </a>
+            </li>
+            <li>
+               <a href="./technology.html" class="nav-text">
+                  <span>03</span> TECHNOLOGY
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <button id="nav-toggle">
+         <img src="./assets/shared/icon-hamburger.svg">
+      </button>
+   </header>
+   <main>
+      <section class="grid-cell first">
+         <h5 class="heading-5">
+            <span>01</span> PICK YOUR DESTINATION
+         </h5>
+         <img src="./assets/destination/image-moon.png">
+      </section>
+      <section class="grid-cell second">
+         <nav id="navbar-secondary">
+            <ul>
+               <li>
+                  <button class="nav-text active">MOON</button>
+               </li>
+               <li>
+                  <button class="nav-text">MARS</button>
+               </li>
+               <li>
+                  <button class="nav-text">EUROPA</button>
+               </li>
+               <li>
+                  <button class="nav-text">TITAN</button>
+               </li>
+            </ul>
+         </nav>
+         <h1 class="heading-1">MOON</h1>
+         <p class="body-text">
+            See our planet as you've never seen it before. A perfect relaxing trip away to help regain perspective and
+            come back refreshed. While you're there, take in some history by visiting the Luna 2 and Apollo 11 landing
+            sites.
+         </p>
+         <div id="numerical-info">
+            <div>
+               <h6 class="subheading-2">AVG. DISTANCE</h6>
+               <h4 class="heading-4" id="distance">384,400 KM</h4>
+            </div>
+            <div>
+               <h6 class="subheading-2">EST. TRAVEL TIME</h6>
+               <h4 class="heading-4" id="travel-time">3 DAYS</h4>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script type="module" src="./js/destination.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+body {
+   background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+main .grid-cell {
+   align-self: center;
+   justify-self: center;
+}
+
+main .grid-cell.first {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+main .grid-cell.first h5.heading-5 {
+   margin-top: 20px;
+   margin-bottom: 70px;
+}
+
+main .grid-cell.first h5.heading-5 span {
+   color: #979797;
+}
+
+main .grid-cell.first img {
+   margin-top: 30px;
+}
+
+main .grid-cell.second {
+   width: 500px;
+}
+
+main .grid-cell.second #navbar-secondary ul {
+   display: flex;
+   width: 300px;
+   justify-content: space-between;
+   list-style-type: none;
+}
+
+main .grid-cell.second #navbar-secondary ul li button.nav-text {
+   cursor: pointer;
+   background: none;
+   color: #fff;
+   padding: 10px 0;
+}
+
+main .grid-cell.second p.body-text {
+   min-height: 120px;
+}
+
+main .grid-cell.second #numerical-info {
+   display: flex;
+   margin-top: 50px;
+   padding-top: 35px;
+   border-top: 1px solid rgba(151, 151, 151, 0.5);
+}
+
+main .grid-cell.second #numerical-info div {
+   flex-grow: 1;
+}
+
+main .grid-cell.second #numerical-info div h6.subheading-2 {
+   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1500px) {
+   main .grid-cell.first h5.heading-5 {
+      margin-top: 10px;
+      margin-bottom: 25px;
+   }
+   main .grid-cell.first img {
+      width: 400px;
+   }
+}
+
+@media only screen and (max-width: 1300px) {
+   main .grid-cell.first h5.heading-5 {
+      font-size: 24px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+   main .grid-cell.first img {
+      width: 320px;
+   }
+   main .grid-cell.second {
+      width: 450px;
+   }
+   main .grid-cell.second h1.heading-1 {
+      font-size: 125px;
+   }
+   main .grid-cell.second #numerical-info {
+      margin-top: 10px;
+      padding-top: 15px;
+   }
+   main .grid-cell.second p.body-text {
+      line-height: 27px;
+   }
+}
+
+@media only screen and (max-width: 1200px) {
+   main .grid-cell.first h5.heading-5 {
+      font-size: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
+   main .grid-cell.first img {
+      width: 300px;
+   }
+   main .grid-cell.second {
+      width: 400px;
+   }
+   main .grid-cell.second h1.heading-1 {
+      font-size: 110px;
+   }
+   main .grid-cell.second #numerical-info {
+      margin-top: 10px;
+      padding-top: 10px;
+   }
+   main .grid-cell.second p.body-text {
+      line-height: 25px;
+      font-size: 16px;
+   }
+   main .grid-cell.second #numerical-info div h6.subheading-2 {
+      font-size: 13px;
+   }
+   main .grid-cell.second #numerical-info div h4.heading-4 {
+      font-size: 28px;
+   }
+}
+
+@media only screen and (max-width: 1000px) {
+   main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+   main .grid-cell,
+   main .grid-cell.second {
+      align-self: stretch;
+      width: 100%;
+      box-sizing: border-box;
+   }
+   main .grid-cell.first {
+      justify-content: space-around;
+      padding-left: 30px;
+   }
+   main .grid-cell.first h5.heading-5 {
+      align-self: flex-start;
+   }
+   main .grid-cell.first img {
+      margin: 0;
+   }
+   main .grid-cell.second {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 0px 75px 35px 75px;
+      box-sizing: border-box;
+   }
+   main .grid-cell.second h1.heading-1 {
+      font-size: 90px;
+   }
+   main .grid-cell.second p.body-text {
+      text-align: center;
+      max-width: 700px;
+      min-height: 100px;
+   }
+   main .grid-cell.second #numerical-info {
+      align-self: stretch;
+      justify-content: space-around;
+      margin-top: 10px;
+      padding-top: 20px;
+   }
+   main .grid-cell.second #numerical-info div {
+      flex-grow: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+@media only screen and (max-width: 650px) {
+   main .grid-cell.first {
+      padding-left: 40px;
+   }
+   main .grid-cell.first h5.heading-5 {
+      font-size: 18px;
+   }
+   main .grid-cell.first img {
+      width: 275px;
+   }
+   main .grid-cell.second h1.heading-1 {
+      font-size: 75px;
+   }
+   main .grid-cell.second p.body-text {
+      text-align: center;
+      max-width: 700px;
+   }
+   main .grid-cell.second #numerical-info div h6.subheading-2 {
+      font-size: 12px;
+   }
+   main .grid-cell.second #numerical-info div h4.heading-4 {
+      font-size: 25px;
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   body {
+      background-image: url("../assets/destination/background-destination-mobile.jpg");
+   }
+   main .grid-cell.first {
+      padding: 0;
+   }
+   main .grid-cell.first h5.heading-5 {
+      align-self: center;
+      letter-spacing: 3px;
+   }
+   main .grid-cell.first img {
+      width: 190px;
+   }
+   main .grid-cell.second {
+      padding: 10px 50px 35px 50px;
+   }
+   main .grid-cell.second #navbar-secondary ul {
+      width: 275px;
+      margin-bottom: 10px;
+   }
+   main .grid-cell.second #numerical-info {
+      flex-direction: column;
+      height: 175px;
+      margin-top: 25px;
+   }
+}
+
+
+@media only screen and (max-width: 417px) {
+   main .grid-cell.second p.body-text {
+      min-height: 125px;
+   }
+}
+
+@media only screen and (max-width: 450px) {
+   main .grid-cell.first img {
+      width: 170px;
+   }
+   main .grid-cell.second {
+      padding: 10px 30px 30px 30px;
+   }
+}
+
+@media only screen and (max-width: 400px) {
+   main .grid-cell.second #navbar-secondary ul {
+      width: 240px;
+      margin-bottom: 10px;
+   }
+   main .grid-cell.second #navbar-secondary ul li button.nav-text {
+      padding: 8px 0;
+      font-size: 14px;
+   }
+   main .grid-cell.second h1.heading-1 {
+      font-size: 56px;
+   }
+   main .grid-cell.second #numerical-info {
+      height: 150px;
+   }
+}
+
+@media only screen and (max-width: 343px) {
+   main .grid-cell.second p.body-text {
+      min-height: 150px;
+   }
+}

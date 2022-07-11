@@ -1,0 +1,246 @@
+body {
+   background-image: url("../assets/technology/background-technology-desktop.jpg");
+}
+
+main {
+   grid-template-columns: 1fr auto;
+}
+
+main .grid-cell {
+   align-self: center;
+   justify-self: center;
+   display: grid;
+   grid-template-areas:
+      "heading heading heading heading heading"
+      "tech-nav-btns text-container text-container text-container text-container";
+   grid-template-columns: auto 1fr 1fr 1fr 1fr;
+   grid-template-rows: 125px auto;
+   width: auto;
+   max-width: 610px
+}
+
+main .grid-cell h5.heading-5 {
+   grid-area: heading;
+}
+
+main .grid-cell h5.heading-5 span {
+   color: #979797;
+}
+
+main .grid-cell #tech-nav-btns {
+   grid-area: tech-nav-btns;
+   min-height: 254px;
+}
+
+main .grid-cell #tech-nav-btns ul {
+   height: 100%;
+   list-style-type: none;
+   padding: 0 50px 0 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+main .grid-cell #tech-nav-btns ul li .tech-nav-btn {
+   aspect-ratio: 1;
+   display: block;
+   width: 60px;
+   border-radius: 100%;
+   background: none;
+   border: 1px solid rgba(151, 151, 151, 0.5);
+   color: #fff;
+   font-size: 25px;
+   font-family: "Barlow-Condensed";
+   cursor: pointer;
+   transition: 0.25s;
+}
+
+main .grid-cell #tech-nav-btns ul li .tech-nav-btn:hover {
+   border: 1px solid #fff;
+}
+
+main .grid-cell #tech-nav-btns ul li .tech-nav-btn.active {
+   border: 1px solid #fff;
+   background-color: #fff;
+   color: #0b0d17;
+}
+
+main .grid-cell #text-container {
+   grid-area: text-container;
+}
+
+main .grid-cell #text-container #mini-header {
+   font-family: "Barlow Condensed";
+   font-size: 16px;
+   letter-spacing: 2.7px;
+   color: #d0d6f9;
+}
+
+main .grid-cell #text-container p.body-text {
+   margin-top: 20px;
+}
+
+main #tech-img {
+   align-self: center;
+}
+
+@media only screen and (max-width: 1500px) {
+   main #tech-img {
+      width: 450px;
+   }
+}
+
+@media only screen and (max-width: 1450px) {
+   main .grid-cell {
+      grid-template-rows: 80px auto;
+   }
+   main #tech-img {
+      width: 400px;
+   }
+}
+
+@media only screen and (max-width: 1350px) {
+   main .grid-cell {
+      grid-template-rows: 80px auto;
+      max-width: 585px;
+   }
+   main #tech-img {
+      width: 365px;
+   }
+}
+
+@media only screen and (max-width: 1200px) {
+   main .grid-cell {
+      grid-template-rows: 60px auto;
+      max-width: 555px;
+   }
+   main .grid-cell h5.heading-5 {
+      font-size: 25px;
+      letter-spacing: 4px;
+   }
+   main .grid-cell #tech-nav-btns {
+      min-height: 240px;
+   }
+   main .grid-cell #tech-nav-btns ul li .tech-nav-btn {
+      width: 55px;
+   }
+   main .grid-cell #text-container h3.heading-3 {
+      font-size: 45px;
+   }
+   main .grid-cell #text-container p.body-text {
+      font-size: 17px;
+   }
+}
+
+@media only screen and (max-width: 1050px) {
+   main #tech-img {
+      width: 310px;
+   }
+}
+
+@media only screen and (max-width: 965px) {
+   main {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.9fr 1.1fr;
+      position: relative;
+   }
+   main .grid-cell {
+      grid-row-start: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      justify-self: stretch;
+      align-self: center;
+      max-width: none;
+   }
+   main .grid-cell #tech-nav-btns {
+      min-height: 0;
+   }
+   main .grid-cell #tech-nav-btns ul {
+      flex-direction: row;
+      padding: 0;
+      width: 210px;
+   }
+   main .grid-cell h5.heading-5 {
+      position: absolute;
+      top: 0;
+      left: 40px;
+   }
+   main .grid-cell #text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 50px;
+      width: 450px;
+   }
+   main .grid-cell #text-container #mini-header {
+      margin-bottom: 10px;
+   }
+   main .grid-cell #text-container h3.heading-3 {
+      font-size: 40px;
+   }
+   main .grid-cell #text-container p.body-text {
+      font-size: 16px;
+      min-height: 150px;
+   }
+   main #tech-img {
+      grid-row-start: 1;
+      width: 100%;
+      min-width: 0;
+      justify-self: center;
+      max-width: 780px;
+      align-self: flex-end;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   body {
+      background: url("../assets/technology/background-technology-tablet.jpg");
+   }
+   main .grid-cell h5.heading-5 {
+      font-size: 20px;
+   }
+   main .grid-cell #text-container {
+      margin-top: 30px;
+   }
+}
+
+@media only screen and (max-width: 725px) {
+   main .grid-cell {
+      align-self: flex-start;
+   }
+   main #tech-img {
+      align-self: center;
+   }
+}
+
+@media only screen and (max-width: 550px) {
+   main .grid-cell h5.heading-5 {
+      left: 50%;
+      transform: translateX(-50%);
+      width: max-content;
+   }
+   main .grid-cell #text-container {
+      width: 80%;
+      min-width: 300px;
+   }
+   main .grid-cell #text-container #mini-header {
+      font-size: 14px;
+   }
+   main .grid-cell #text-container h3.heading-3 {
+      font-size: 24px;
+   }
+   main .grid-cell #text-container p.body-text {
+      font-size: 15px;
+      line-height: 25px;
+   }
+   main .grid-cell #tech-nav-btns ul {
+      width: 175px;
+   }
+   main .grid-cell #tech-nav-btns ul li .tech-nav-btn {
+      width: 45px;
+      font-size: 18px;
+   }
+}
